@@ -1,0 +1,17 @@
+{
+  "name": "discord-janitor",
+  "version": "0.0.1",
+  "description": "Janitor bot for discord, cleans up old messages",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Will Vincent <will@willvincent.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "dotenv": "^6.2.0",
+    "moment": "^2.24.0",
+    "standard-version": "^5.0.0"
+  }
+}
