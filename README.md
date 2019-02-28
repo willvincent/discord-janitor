@@ -29,3 +29,10 @@ Created for use with [Shinobi](https://shinobi.video/), to automatically clear m
 Ultimately you probably want to run this on a remote server somewhere, and keep it alive with pm2 or similar.
 
 Be aware that it may take a while to remove lots of old messages, or if your server is exceptionally busy this may not work at all as it currently exists.
+
+
+### Commands
+
+##### !purge _n_:
+
+Purge the most recent _n_ messages. In conjunction with the auto-removal of older messages, this command will allow manual removal of multiple recent messages. Example: `!purge 5` will remove _up to_ 5 recent messages, and the purge command message itself.
