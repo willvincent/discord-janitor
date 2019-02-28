@@ -1,6 +1,6 @@
 {
   "name": "discord-janitor",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Janitor bot for discord, cleans up old messages",
   "main": "index.js",
   "scripts": {
