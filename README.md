@@ -33,6 +33,6 @@ Be aware that it may take a while to remove lots of old messages, or if your ser
 
 ### Commands
 
-##### !purge _n_:
+**!purge _n_:** Purge the most recent _n_ messages. In conjunction with the auto-removal of older messages, this command will allow manual removal of multiple recent messages.
 
-Purge the most recent _n_ messages. In conjunction with the auto-removal of older messages, this command will allow manual removal of multiple recent messages. Example: `!purge 5` will remove _up to_ 5 recent messages, and the purge command message itself.
+Example: `!purge 5` will remove _up to_ 5 recent messages, and the purge command message itself.
