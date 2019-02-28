@@ -7,9 +7,12 @@ const older_than = process.env.DELETE_AFTER.split(' ')
 
 const servers = require('./servers.json')
 
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('pong')
+client.on('message', async msg => {
+  if (msg.content.substr(0,6) === '!purge') {
+    const [cmd, count] = msg.content.split(' ')
+    const messages = await msg.channel.fetchMessages({ limit: (parseInt(count) + 1) })
+    console.log(`Manual purge of most recent ${count} message${count == 1 ? '' : 's'}\n`)
+    msg.channel.bulkDelete(messages)
   }
 })
 
